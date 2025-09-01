@@ -1,0 +1,60 @@
+/* Styles pour la page de nouvelle catégorie */
+.page-nouvelle-categorie {
+  padding: 20px;
+}
+
+.page-nouvelle-categorie h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.page-nouvelle-categorie h2 i {
+  margin-right: 10px;
+  color: #f39c12;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.form-control, .form-select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.25);
+}
+
+.is-invalid {
+  border-color: #e74c3c;
+}
+
+.invalid-feedback {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-nouvelle-categorie {
+    padding: 15px;
+  }
+}

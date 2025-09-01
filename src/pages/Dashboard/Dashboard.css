@@ -1,0 +1,70 @@
+/* Layout flexbox pour couvrir toute la largeur */
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu latéral fixe à gauche */
+.menu-lateral {
+  width: 280px;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+/* Zone de contenu à droite - prend tout l'espace restant */
+.zone-contenu-droite {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+/* Header fixe en haut */
+.header-fixe {
+  background: white;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 20px;
+  flex-shrink: 0;
+}
+
+/* Contenu principal avec scroll */
+.contenu-principal {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Footer fixe en bas */
+.footer-fixe {
+  background: white;
+  border-top: 1px solid #dee2e6;
+  padding: 15px 20px;
+  text-align: center;
+  color: #6c757d;
+  flex-shrink: 0;
+}
+
+/* Titre dans le menu */
+.titre-menu {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #dee2e6;
+  background: #f8f9fa;
+}
+
+.titre-menu h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.titre-menu small {
+  color: #6c757d;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Backend</title>
+</head>
+<body>
+    <h1>Test Backend</h1>
+    <button onclick="testerPort8080()">Test Port 8080</button>
+    <button onclick="testerPort8081()">Test Port 8081</button>
+    <div id="result"></div>
+
+    <script>
+        async function testerPort(port) {
+            try {
+                const response = await fetch(`http://localhost:${port}/gestiondestock/v1/fournisseurs/all`);
+                const result = await response.text();
+                document.getElementById('result').innerHTML = 
+                    `<p>Port ${port} - Status: ${response.status}</p><p>Response: ${result}</p>`;
+            } catch (error) {
+                document.getElementById('result').innerHTML = 
+                    `<p>Port ${port} - Erreur: ${error.message}</p>`;
+            }
+        }
+
+        function testerPort8080() { testerPort(8080); }
+        function testerPort8081() { testerPort(8081); }
+    </script>
+</body>
+</html>

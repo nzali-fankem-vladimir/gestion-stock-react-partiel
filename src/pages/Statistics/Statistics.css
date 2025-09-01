@@ -1,0 +1,84 @@
+/* Styles pour la page des statistiques */
+.page-statistiques {
+  padding: 20px;
+}
+
+.en-tete-page {
+  margin-bottom: 30px;
+}
+
+.en-tete-page h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.en-tete-page h2 i {
+  margin-right: 10px;
+  color: #3498db;
+}
+
+/* Cartes de statistiques */
+.border-left-primary {
+  border-left: 4px solid #3498db !important;
+}
+
+.border-left-success {
+  border-left: 4px solid #27ae60 !important;
+}
+
+.border-left-warning {
+  border-left: 4px solid #f39c12 !important;
+}
+
+.border-left-info {
+  border-left: 4px solid #17a2b8 !important;
+}
+
+.text-primary {
+  color: #3498db !important;
+}
+
+.text-success {
+  color: #27ae60 !important;
+}
+
+.text-warning {
+  color: #f39c12 !important;
+}
+
+.text-info {
+  color: #17a2b8 !important;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.btn-block {
+  width: 100%;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.text-gray-800 {
+  color: #2c3e50 !important;
+}
+
+.text-gray-300 {
+  color: #bdc3c7 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-statistiques {
+    padding: 15px;
+  }
+  
+  .en-tete-page h2 {
+    font-size: 1.5rem;
+  }
+}

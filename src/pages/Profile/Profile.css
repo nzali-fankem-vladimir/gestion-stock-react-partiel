@@ -1,0 +1,67 @@
+/* Styles pour la page de profil */
+.page-profil {
+  padding: 20px;
+}
+
+.page-profil h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.page-profil h2 i {
+  margin-right: 10px;
+  color: #3498db;
+}
+
+.avatar-profil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.photo-profil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e9ecef;
+}
+
+.avatar-initiales-profil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.section-formulaire {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.section-formulaire:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.section-titre {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-titre i {
+  color: #3498db;
+}

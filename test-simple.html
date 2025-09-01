@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Fournisseur</title>
+</head>
+<body>
+    <h1>Test Création Fournisseur</h1>
+    <button onclick="testerCreation()">Tester Création</button>
+    <div id="result"></div>
+
+    <script>
+        async function testerCreation() {
+            const fournisseur = {
+                nom: "TestNom",
+                prenom: "TestPrenom",
+                mail: "test@test.com",
+                numTel: "0123456789",
+                idEntreprise: 1,
+                adresse: {
+                    adresse1: "123 Rue Test",
+                    ville: "Paris",
+                    codePostale: "75001",
+                    pays: "France"
+                }
+            };
+
+            try {
+                const response = await fetch('http://localhost:8081/gestiondestock/v1/fournisseurs/create', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(fournisseur)
+                });
+
+                const result = await response.text();
+                document.getElementById('result').innerHTML = 
+                    `<p>Status: ${response.status}</p><p>Response: ${result}</p>`;
+            } catch (error) {
+                document.getElementById('result').innerHTML = 
+                    `<p>Erreur: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

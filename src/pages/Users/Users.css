@@ -1,0 +1,42 @@
+/* Styles pour la page des utilisateurs */
+.page-utilisateurs {
+  padding: 20px;
+}
+
+.page-utilisateurs h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.page-utilisateurs h2 i {
+  margin-right: 10px;
+  color: #9b59b6;
+}
+
+.avatar-utilisateur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-utilisateur {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e9ecef;
+}
+
+.avatar-initiales {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}

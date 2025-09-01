@@ -1,0 +1,14 @@
+/* Styles pour la page de nouvel utilisateur */
+.page-nouvel-utilisateur {
+  padding: 20px;
+}
+
+.page-nouvel-utilisateur h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.page-nouvel-utilisateur h2 i {
+  margin-right: 10px;
+  color: #9b59b6;
+}

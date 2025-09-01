@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gestion_stock
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: vladimir
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: mySecretKey123456789012345678901234567890
+  expiration: 86400000

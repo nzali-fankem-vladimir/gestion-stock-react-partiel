@@ -1,0 +1,13 @@
+/* Styles pour la page de connexion */
+.page-connexion {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-connexion .card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
